@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lifepharma</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        section {
+            padding: 5% 0
+        }
+
+        .alizarin {
+            background: #e74c3c
+        }
+
+        .amethyst {
+            background: #9b59b6
+        }
+
+        .emerald {
+            background: #2ecc71
+        }
+
+        .midnight-blue {
+            background: #2c3e50
+        }
+
+        .peter-river {
+            background: #3498db
+        }
+
+        .dl {
+            background: #f0f0f0;
+            padding: 30px 0;
+            border-radius: 20px;
+            position: relative
+        }
+
+        .dl:before {
+            content: " ";
+            height: 20px;
+            width: 20px;
+            background: #ddd;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            margin-left: -10px
+        }
+
+        .dl .brand {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 10px 15px;
+            margin-top: 10px;
+            text-align: center;
+            min-height: 100px
+        }
+
+        .dl .discount {
+            min-height: 50px;
+            position: relative;
+            font-size: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-weight: 700;
+            padding: 20px 15px 0;
+            color: #f1c40f
+        }
+
+        .dl .discount:after {
+            content: " ";
+            border-right: 20px solid transparent;
+            border-left: 20px solid transparent;
+            position: absolute;
+            bottom: -20px;
+            left: 20%
+        }
+
+        .dl .discount.alizarin:after {
+            border-top: 20px solid #e74c3c
+        }
+
+        .dl .discount.peter-river:after {
+            border-top: 20px solid #3498db
+        }
+
+        .dl .discount.emerald:after {
+            border-top: 20px solid #2ecc71
+        }
+
+        .dl .discount.amethyst:after {
+            border-top: 20px solid #9b59b6
+        }
+
+        .dl .discount .type {
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: -30px
+        }
+
+        .dl .descr {
+            color: #999;
+            margin-top: 10px;
+            padding: 20px 15px
+        }
+
+        .dl .ends {
+            padding: 0 15px;
+            color: #f1c40f;
+            margin-bottom: 10px
+        }
+
+        .dl .coupon {
+            min-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 20px 15px
+        }
+
+        .dl .coupon a.open-code {
+            color: #16a085
+        }
+
+        .dl .coupon .code {
+            letter-spacing: 1px;
+            border-radius: 4px;
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: #f1c40f;
+            background: #f0f0f0
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <!-- First Part: Logo, Search Bar, Cart & User Icons -->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary nav2">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo Section -->
+                <div class="navbar-logo d-flex align-items-center">
+                    <h1 class="companyname mx-3">LIFE PHARMA</h1>
+                </div>
+
+                <!-- Toggler/collapsible Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSearchIcons" aria-controls="navbarSearchIcons" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Search Section & Icons in Collapsible Div -->
+                <div class="collapse navbar-collapse" id="navbarSearchIcons">
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+                        <!-- Search Section -->
+                        <div class="search-container d-flex flex-grow-1 mx-2">
+                            <input class="form-control" type="text" placeholder=" LIFE PHARMA" aria-label="Search"
+                                id="search-input">
+                            <button class=" mx-2" type="submit" id="search-button"
+                                style="border-radius: 5px;border: none;">SEARCH</button>
+                        </div>
+
+                        <!-- Cart and User Icons -->
+                        <div class="icons-container d-flex align-items-center">
+                            <a href="cart.html" class="m-3">
+                                <img src="photos/cart.png" alt="Cart" width="50" height="50">
+                            </a>
+                            <a href="login.html" class="m-3">
+                                <img src="photos/user.png" alt="User" width="50" height="50">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Second Part: Menu Options -->
+        <nav class="navbar navbar-expand-lg nav2">
+            <!-- Toggler/collapsible Button for Small Screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links (Collapsible) -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto to align the list to the right -->
+                    <li class="nav-item"><a href="index.html" class="nav-link ">HOME</a></li>
+                    <li class="nav-item"><a href="medicine.html" class="nav-link">MEDICINE</a></li>
+                    <li class="nav-item"><a href="company.html" class="nav-link">COMPANY</a></li>
+                    <li class="nav-item"><a href="offers.html" class="nav-link openpage">OFFERS</a></li>
+                    <li class="nav-item"><a href="bestseller.html" class="nav-link">BEST SELLERS</a></li>
+                    <li class="nav-item"><a href="help.html" class="nav-link">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="labels" style="background-color: #141619;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dl">
+                            <div class="brand">
+                                <h2>MEDICINE</h2>
+                            </div>
+                            <div class="discount alizarin">30%
+                                <div class="type">off</div>
+                            </div>
+                            <div class="descr">
+                                <strong>Coupon applicable on your medicine order above Rs. 1250.
+                                    Hurry! Order Now.</strong>                                
+                            </div>
+                            <div class="ends">
+                                <small>* Conditions and restrictions apply.</small>
+                            </div>
+                            <div class="coupon midnight-blue">
+                                <a data-toggle="collapse" href="#code-1" class="open-code">LV5MAY14</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dl">
+                            <div class="brand">
+                                <h2>GENERIC</h2>
+                            </div>
+                            <div class="discount emerald">
+                                50%
+                                <div class="type">
+                                    off
+                                </div>
+                            </div>
+                            <div class="descr">
+                                <strong>
+                                    Coupon applicable on your Generic medicine order above Rs. 1250.
+                                    Hurry! Order Now.
+                                </strong>
+                                
+                            </div>
+                            <div class="ends">
+                                <small>
+                                    * Conditions and restrictions apply.
+                                </small>
+                            </div>
+                            <div class="coupon midnight-blue">
+                                <a data-toggle="collapse" href="#code-2" class="open-code"> MNO123ST</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dl">
+                            <div class="brand">
+                                <h2>
+                                    COSMATIC
+                                </h2>
+                            </div>
+                            <div class="discount peter-river">
+                                15%
+                                <div class="type">
+                                    off
+                                </div>
+                            </div>
+                            <div class="descr">
+                                <strong>
+                                    Coupon applicable on your Cosmatic order above Rs. 1250.
+                                    Hurry! Order Now.
+                                </strong>
+                               
+                            </div>
+                            <div class="ends">
+                                <small>
+                                    * Conditions and restrictions apply.
+                                </small>
+                            </div>
+                            <div class="coupon midnight-blue">
+                                <a data-toggle="collapse" href="#code-3" class="open-code">OLV4SY3R</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dl">
+                            <div class="brand">
+                                <h2>
+                                    DIAPERS
+                                </h2>
+                            </div>
+                            <div class="discount amethyst">
+                                25%
+                                <div class="type">
+                                    off
+                                </div>
+                            </div>
+                            <div class="descr">
+                                <strong>
+                                    Coupon applicable on your Diapers order above Rs. 350.
+                                    Hurry! Order Now.
+                                </strong>
+                                
+                            </div>
+                            <div class="ends">
+                                <small>
+                                    * Conditions and restrictions apply.
+                                </small>
+                            </div>
+                            <div class="coupon midnight-blue">
+                                <a data-toggle="collapse" href="#code-4" class="open-code">ZUY4OPLQ</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>

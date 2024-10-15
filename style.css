@@ -1,0 +1,336 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.search-container input {
+    height: 40px; /* Set height for the search input */
+}
+
+.search-container button {
+    height: 40px; 
+    width: 120px;
+    background-color: #bcfd4c;
+
+}
+
+.icons-container i {
+    font-size: 24px;
+}
+
+
+
+
+
+
+.icons-container a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav2{
+    background-color: #141619;
+    width: 100%;
+    
+}
+.profilepicture_cart > img{
+    border-radius: 50%;
+}
+
+.fdecorate{
+    text-decoration: none;
+    color: #b3b4bd;
+   
+    font-weight: 900;
+    
+    
+   
+}
+.menuoption{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+}
+a{
+    color: #b3b4bd;
+}
+
+
+.conatainer{
+    padding: 2rem; 
+   
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 50px auto;
+
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto ;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75 hsla(0,0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+}
+.slider-nav {
+   display: flex; 
+   column-gap: 1rem;
+   position: absolute;
+   bottom: 1.25rem;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+}
+ 
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1  ;
+}
+.bgcolor {
+    background-color: #141619;
+    
+    padding: 0.5rem;
+    
+
+}
+.openpage{
+    color:white;
+    text-decoration: underline;
+}
+ .boxitems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    justify-content: center;
+    align-items: ceneter;
+
+}
+.boxitems > div{
+    height: 350px;
+    width: 350px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 25px;
+   
+    background-color: #050a44;
+}
+.boxitems >div >img{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+
+}
+.boxitems >div:hover{
+    background-color: #0a21c0; 
+   
+   
+
+}
+.boxitems >div>a>h5:hover{
+    
+    
+    text-decoration: underline;
+
+   
+
+}
+.boxitems >div >a>h5{
+    margin-top: 13px;
+    color: white;
+    text-align: center;
+   
+} 
+.boxitems >div >h1{
+    margin-top: 13px;
+    color: white;
+    text-align: center;
+
+}
+footer {
+    background-color: #141619; /* Change to a shade matching your site */
+    color: #b3b4bd; /* Your branding yellow */
+}
+footer  h1 {
+    font-size: 1.8rem;
+    color: #b3b4bd; /* Matches the company branding color */
+}
+footer >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialmediaaccount {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.boxitems2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    justify-content: center;
+    align-items: ceneter;
+
+    
+}
+.boxitems2 > div{
+    height: 450px;
+    width: 450px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 25px;
+   
+    background-color: #fff;
+}
+.boxitems2 >div >img{
+    height: 150px;
+    width: 150px;
+    margin-left: 33%;
+   
+
+}
+
+.boxitems2 >div >div>h1{
+    color: rgb(228, 75, 75);
+   
+}
+.boxitems2 >div >div>h3{
+   font-weight: bolder;
+   
+}
+.boxitems2 >div >div>h4{
+   color: rgb(8, 8, 171);
+    
+ }
+
+ .boxitems3{
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center align items */
+    gap: 20px;
+
+    
+}
+.boxitems3 > div{
+
+    height: 500px;
+    width: 90%;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 30px 5%;
+    
+    padding: 25px;
+   
+    background-color: #fff;
+}
+.boxitems3 >div >img{
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin: 70px 50px;
+    
+   
+
+}
+.boxitems3 >div >h1{
+    color: rgb(221, 21, 21);
+    
+   
+}
+.heading{
+    text-align: center;
+    margin: 0px auto;
+    color: rgb(255, 255, 255);
+    font-weight: 900;    
+}
+.login{
+   
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    
+}
+.navbar {
+    padding: 1rem;
+}
+
+.companyname {
+    margin-left: 20px;
+    margin-right: 60px;
+    font-size: 1.5rem;
+    color: #b3b4bd; /* Yellow color for branding */
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 204, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    
+}
+
+.nav-link {
+    color: #b3b4bd; 
+}
+
+.nav-link:hover {
+    color: white; /
+}
+
+
+#search-button {
+    background-color: #273db4;
+    color: #000;
+}
+
+#search-button:hover {
+    background-color: #050a44;
+    color: #fff;
+}
+.confirm {
+    color: #f7f7f7;
+    
+
+}
+.confirm>div {
+    text-align: center;
+
+}
+.confirm>div>p {
+    text-align: center;
+    font-size: 25px;
+    color: #b3b4bd;
+
+}
+
